@@ -1,0 +1,83 @@
+.color {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1em;
+  }
+  
+  .section-content {
+    color: white;
+    position: relative;
+  }
+  
+  .section-columns {
+    display: flex;
+    gap: 1rem;
+    padding-left: 1em;
+    word-spacing: 1px;
+  }
+  .secondintro {
+    position: relative;
+  }
+  .secondtop p {
+    margin-top: 0.75em;
+  }
+  .mywork {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: var(--nav-h);
+  }
+  
+  .mywork::after {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--nav-h);
+    opacity: 0.25;
+  }
+  .button1 {
+    margin: 5em 1em 0;
+  }
+  .button1 label {
+    padding: 0.5em;
+    width: 10em;
+    text-align: center;
+    margin: 1em;
+    border: 5px var(--nav-h) solid;
+  }
+  .labels {
+    display: flex;
+    justify-content: center;
+    color: var(--nav-h);
+  }
+  
+  .button1 input {
+    display: none;
+  }
+  .button1 p {
+    display: none;
+    margin-top: 1em;
+  }
+  
+  .button1 input:checked + p {
+    display: block;
+    color: white;
+  
+  }
+  
+  @media (max-width: 750px) {
+    .section-columns {
+      display: block;
+    }
+    
+      }
+    .secondtop {
+      margin-top: 1.5em;
+    }
+  
+  @media (min-width:630px){
+    .intro p{
+      font-size: 20px;
+    }
+    }

@@ -1,0 +1,285 @@
+/* the first main div */
+
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2em;
+  }
+  .intro > div {
+    width: 100%;
+    overflow: hidden;
+  }
+  .front {
+    color: var(--nav-h);
+  }
+  .firstintro {
+    text-align: center;
+    margin-top: 0.5em;
+  }
+  .secondintro {
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper {
+    position: relative;
+  }
+  
+  .intro p {
+    text-align: center;
+    font-size: 15px;
+  }
+  .imgtop1,
+  .imgtop2 {
+    display: none;
+    background-color: var(--nav-h);
+    color: black;
+    padding: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    border-radius: 16px;
+  }
+  .imgtop1 {
+    right: -30px;
+    bottom: 169px;
+  }
+  .imgtop2 {
+    right: -60px;
+    top: 118px;
+  }
+  .img1 {
+    border-radius: 100%;
+    box-shadow: var(--bs);
+  
+    /* width: 100%;
+    height: 300px;
+    object-fit: contain;
+    max-width: 300px; */
+  }
+  .front {
+    font-family: var(--ff-secondary);
+  }
+  @media (min-width: 480px) {
+    .imgtop1,
+    .imgtop2 {
+      display: inline-block;
+    }
+  }
+  @media (min-width: 944px) {
+    .intro {
+      flex-direction: row;
+    }
+  }
+  
+  /* the second main div */
+  
+  .background {
+    background-image: url(../../images/gold9.jpg);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .color {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1em;
+  }
+  
+  .section-content {
+    color: white;
+    position: relative;
+  }
+  
+  .section-columns {
+    display: flex;
+    gap: 1rem;
+    padding-left: 1em;
+    word-spacing: 1px;
+  }
+  .secondintro {
+    position: relative;
+  }
+  .secondtop p {
+    margin-top: 0.75em;
+  }
+  .mywork {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: var(--nav-h);
+  }
+  
+  .mywork::after {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--nav-h);
+    opacity: 0.25;
+  }
+  .button1 {
+    margin: 5em 1em 0;
+  }
+  .button1 label {
+    padding: 0.5em;
+    width: 10em;
+    text-align: center;
+    margin: 1em;
+    border: 5px var(--nav-h) solid;
+  }
+  .labels {
+    display: flex;
+    justify-content: center;
+    color: var(--nav-h);
+  }
+  
+  .button1 input {
+    display: none;
+  }
+  .button1 p {
+    display: none;
+    margin-top: 1em;
+  }
+  
+  .button1 input:checked + p {
+    display: block;
+    color: white;
+  
+  }
+  
+  @media (max-width: 750px) {
+    .section-columns {
+      display: block;
+    }
+    
+      }
+    .secondtop {
+      margin-top: 1.5em;
+    }
+  
+  @media (min-width:630px){
+    .intro p{
+      font-size: 20px;
+    }
+    }
+  /* this is my third section */
+  
+  .third {
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .third-p {
+    padding-top: 0.75em;
+  }
+  .myself {
+    padding-top: 2em;
+    padding-bottom: 0.75em;
+  }
+  .myself1 {
+    border: 1px solid black;
+    background-color: var(--nav-h);
+    font-family: var(--ff-secondary);
+    font-size: 22px;
+    padding: 1rem;
+    width: 100%;
+  }
+  .threediv {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 9em;
+  }
+  .myself1 {
+    flex-grow: 1;
+  }
+  .third-p {
+    max-width: 50%;
+  }
+  .third-img {
+    position: absolute;
+    top: -80px;
+    right: 50px;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 35%
+    
+  }
+  
+  /* the fourth section */
+  
+  .gal1 {
+    padding-top: 2em;
+  }
+  
+  .galdiv {
+    color: white;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .galdiv p {
+    color: var(--nav-h);
+  }
+  .galary {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  .imglast {
+    border: 1px solid black;
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+  
+    max-width: 100%;
+  }
+  .imglast:hover{
+    transform: scale(1.1);
+  }
+  
+  
+  .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  /* contact page */
+  h2{
+    text-align: center;
+  } 
+  .form{
+    display: grid;
+    margin:1rem 25%;
+  }
+  .form input{
+    padding: 1em;
+  }
+  .form input:focus{
+    background: var(--nav-h);
+  }
+  .form label{
+    display: block;
+    margin: 0.25rem 0;
+    font-size: 20px;
+  }
+  .submit{
+  display: block;
+  margin-top: 5px;
+  background-color: var(--nav-h);
+  
+  }
+  .contact{
+    background:rgba(0, 0, 0, 0.9);
+    color: wheat;
+    margin:1rem 25%;
+  }

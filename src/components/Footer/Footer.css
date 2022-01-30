@@ -1,0 +1,22 @@
+/* the footer */
+footer {
+    padding-top: 3rem;
+    background-color: b;
+    text-align: center;
+    height: 15rem;
+    color: var(--nav-h);
+    background-color: black;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list {
+    text-align: center;
+    font-size: 1.8rem;
+   }
+  .list a {
+    color: var(--nav-h);
+  
+  } 
